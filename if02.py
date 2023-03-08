@@ -8,4 +8,35 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return
+
+    answer = 0
+    if (a < b) or (a < c):
+        answer += a
+
+    elif ((a < b) or (c < a)) and (c < b):
+        answer += c
+
+    elif ((b < a) or (a < c)) and (b < c):
+        answer += b
+
+    elif (b < a) or (b < c):
+        answer += b
+
+    elif ((b < a) or (c < b)) and (c < a):
+        answer += c
+
+    elif ((a < b) or (b < c)) and (a < c):
+        answer += a
+
+    elif (c < a) or (c < b):
+        answer += c
+
+    elif ((c < a) or (b < c)) and (b < a):
+        answer += b
+
+    elif ((a < c) or (c < b)) and (a < b):
+        answer += a
+
+    return answer
+
+print(main(9,8,1))
