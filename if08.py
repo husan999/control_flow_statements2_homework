@@ -14,4 +14,27 @@ def main(number):
     Returns:
         str: return answer.
     """
-    return
+    if number == 1:
+        hafta = "Monday"
+
+    elif number == 2:
+        hafta = "Tuesday"
+
+    elif number == 3:
+        hafta = "Wednesday"
+
+    elif number == 4:
+        hafta = "Thursday"
+
+    elif number == 5:
+        hafta = "Friday"
+
+    elif number == 6:
+        hafta = "Saturday"
+
+    elif number == 7:
+        hafta = "Sunday"
+
+    return hafta
+
+print(main(3))
