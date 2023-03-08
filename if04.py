@@ -7,4 +7,18 @@ def main(a,b):
     Returns:
         int: return answer.
     """
-    return
+    answer = 0
+
+    if a > b:
+        answer += a
+
+    elif b > a:
+        answer += b
+
+    elif a == b:
+        answer += 0
+
+
+    return answer
+
+print(main(17,17))
