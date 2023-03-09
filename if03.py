@@ -14,6 +14,4 @@ def main(a,b,c):
         return b
     elif (a<b) and (c<a):
         return b
-    elif a<b or a<c:
-        return a
 print(main(6,7,3))
