@@ -8,32 +8,10 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """ 
-    if (a > b) or (a > c):
-        answer = a
-
-    elif ((a > b) or (c > a)) and (c > b):
-        answer = c
-
-    elif ((b > a) or (a > c)) and (b > c):
-        answer = b
-
-    elif (b > a) or (b > c):
-        answer = b
-
-    elif ((b > a) or (c > b)) and (c > a):
-        answer = c
-
-    elif ((a > b) or (b > c)) and (a > c):
-        answer = a
-
-    elif (c > a) or (c > b):
-        answer = c
-
-    elif ((c > a) or (b > c)) and (b > a):
-        answer = b
-
-    elif ((a > c) or (c > b)) and (a > b):
-        answer = a
-
-    return answer
-print(main(3,10,9))
+    if a>b and a>c:
+        return a
+    elif a<b and b>c:
+        return b
+    elif a<c and c>b:
+        return c
+print(main(2,3,5))
