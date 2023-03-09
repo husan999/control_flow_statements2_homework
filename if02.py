@@ -9,16 +9,15 @@ def main(a,b,c):
         int: return answer.
     """
     if (a>b) and (a>c):
-        answer=a
+        return a
     elif (a>b) and (c>a) and (c>b):
-        answer=c
+        return c
     elif (a<b) and (c<a) and (c<b):
-        answer=c
+        return c
     elif a>b and a>c:
-        answer=a
+        return a
     elif a>c and c>b and a>b:
-        answer=b
+        return b
     elif a<c and c<b and a>b:
-        answer=b
-    return answer
+        return b
 print(main(5,7,3))
