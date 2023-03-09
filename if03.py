@@ -16,6 +16,5 @@ def main(a,b,c):
 
     else:
         answer = b
-
     return answer
 print(main(88,59,200))
