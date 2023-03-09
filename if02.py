@@ -10,14 +10,6 @@ def main(a,b,c):
     """
     if (a>b) and (a>c):
         return a
-    elif (a>b) and (c>a) and (c>b):
+    elif (a>b) and (c>a):
         return c
-    elif (a<b) and (c<a) and (c<b):
-        return c
-    elif a>b and a>c:
-        return a
-    elif a>c and c>b and a>b:
-        return b
-    elif a<c and c<b and a>b:
-        return b
-print(main(5,7,3))
+print(main(5,7,4))
